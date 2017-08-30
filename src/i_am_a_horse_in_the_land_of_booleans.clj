@@ -2,7 +2,9 @@
   (:refer-clojure :exclude [boolean]))
 
 (defn boolean [x]
-  ":(")
+  (if x
+    true
+    false))
 
 (defn abs [x]
   ":(")
@@ -14,7 +16,10 @@
   ":(")
 
 (defn teen? [age]
-  ":(")
+  (if (< 13 age 19)
+    true
+    false))
+
 
 (defn not-teen? [age]
   ":(")
